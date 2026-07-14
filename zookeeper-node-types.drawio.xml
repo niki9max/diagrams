@@ -729,4 +729,247 @@
       </root>
     </mxGraphModel>
   </diagram>
+  <diagram id="zkNodeTypes04" name="v4-quadrant-gradient">
+    <mxGraphModel dx="1400" dy="800" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1400" pageHeight="800" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+
+        <!-- ============================================================ -->
+        <!-- QUADRANT 1: PERSISTENT NODE                                  -->
+        <!-- ============================================================ -->
+        <mxCell id="q1-border" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFE6CC;strokeColor=#CCCCCC;arcSize=4;gradientColor=#FFFFFF;gradientDirection=south;" value="" vertex="1">
+          <mxGeometry height="360" width="660" x="20" y="20" as="geometry" />
+        </mxCell>
+        <mxCell id="q1-badge" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#FFE6CC;strokeColor=#D79B00;fontStyle=1;fontSize=16;" value="1" vertex="1">
+          <mxGeometry height="36" width="36" x="40" y="35" as="geometry" />
+        </mxCell>
+        <mxCell id="q1-title" parent="1" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontStyle=1;fontSize=18;" value="PERSISTENT NODE" vertex="1">
+          <mxGeometry height="30" width="300" x="88" y="38" as="geometry" />
+        </mxCell>
+        <mxCell id="q1-desc" parent="1" style="text;html=1;align=left;verticalAlign=top;whiteSpace=wrap;strokeColor=none;fillColor=none;fontSize=13;" value="It remains in the namespace until it is explicitly deleted." vertex="1">
+          <mxGeometry height="40" width="330" x="76" y="78" as="geometry" />
+        </mxCell>
+
+        <mxCell id="q1-root" parent="1" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#FFE6CC;strokeColor=#D79B00;gradientColor=#FFFFFF;gradientDirection=south;" value="" vertex="1">
+          <mxGeometry height="36" width="36" x="120" y="150" as="geometry" />
+        </mxCell>
+        <mxCell id="q1-root-lbl" parent="1" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=13;" value="/" vertex="1">
+          <mxGeometry height="24" width="20" x="164" y="156" as="geometry" />
+        </mxCell>
+        <mxCell id="q1-edge1" edge="1" parent="1" source="q1-root" target="q1-node" style="endArrow=none;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="q1-node" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFE6CC;strokeColor=#D79B00;gradientColor=#FFFFFF;gradientDirection=south;fontSize=13;" value="/db-config" vertex="1">
+          <mxGeometry height="36" width="130" x="120" y="220" as="geometry" />
+        </mxCell>
+        <mxCell id="q1-edge2" edge="1" parent="1" source="q1-node" target="q1-data" style="endArrow=none;html=1;rounded=0;dashed=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.7;entryDx=0;entryDy=0;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="q1-data" parent="1" style="shape=note2;whiteSpace=wrap;html=1;size=16;align=left;verticalAlign=top;spacingLeft=6;fontFamily=Courier New;fontSize=12;fillColor=#FFFFFF;strokeColor=#000000;" value="{&#10;  &quot;host&quot;: &quot;db.example.com&quot;,&#10;  &quot;timeout&quot;: 30,&#10;  &quot;enabled&quot;: true&#10;}" vertex="1">
+          <mxGeometry height="110" width="230" x="390" y="150" as="geometry" />
+        </mxCell>
+
+        <mxCell id="q1-usecases" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFE6CC;strokeColor=#D79B00;gradientColor=#FFFFFF;gradientDirection=south;align=left;verticalAlign=top;spacing=8;fontSize=13;" value="&lt;b&gt;&lt;font color=&quot;#D2691E&quot;&gt;Use cases:&lt;/font&gt;&lt;/b&gt;&lt;div&gt;Application configuration, shared state.&lt;/div&gt;" vertex="1">
+          <mxGeometry height="80" width="230" x="390" y="280" as="geometry" />
+        </mxCell>
+
+        <mxCell id="q1-example" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFE6CC;strokeColor=#D79B00;gradientColor=#FFFFFF;gradientDirection=south;align=left;verticalAlign=middle;spacing=8;fontSize=13;" value="&lt;b&gt;&lt;font color=&quot;#D2691E&quot;&gt;Example:&lt;/font&gt;&lt;/b&gt;  /db-config" vertex="1">
+          <mxGeometry height="36" width="310" x="40" y="330" as="geometry" />
+        </mxCell>
+
+        <!-- ============================================================ -->
+        <!-- QUADRANT 2: EPHEMERAL NODE                                   -->
+        <!-- ============================================================ -->
+        <mxCell id="q2-border" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFE6CC;strokeColor=#CCCCCC;arcSize=4;gradientColor=#FFFFFF;gradientDirection=south;" value="" vertex="1">
+          <mxGeometry height="360" width="660" x="700" y="20" as="geometry" />
+        </mxCell>
+        <mxCell id="q2-badge" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#FFE6CC;strokeColor=#D79B00;fontStyle=1;fontSize=16;" value="2" vertex="1">
+          <mxGeometry height="36" width="36" x="720" y="35" as="geometry" />
+        </mxCell>
+        <mxCell id="q2-title" parent="1" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontStyle=1;fontSize=18;" value="EPHEMERAL NODE" vertex="1">
+          <mxGeometry height="30" width="300" x="768" y="38" as="geometry" />
+        </mxCell>
+        <mxCell id="q2-desc" parent="1" style="text;html=1;align=left;verticalAlign=top;whiteSpace=wrap;strokeColor=none;fillColor=none;fontSize=13;" value="An ephemeral node exists only as long as the client session that created it remains active. If the client disconnects or its session expires, ZooKeeper automatically removes the node." vertex="1">
+          <mxGeometry height="60" width="440" x="756" y="78" as="geometry" />
+        </mxCell>
+
+        <mxCell id="q2-root" parent="1" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#FFE6CC;strokeColor=#D79B00;gradientColor=#FFFFFF;gradientDirection=south;" value="" vertex="1">
+          <mxGeometry height="36" width="36" x="800" y="150" as="geometry" />
+        </mxCell>
+        <mxCell id="q2-root-lbl" parent="1" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=13;" value="/" vertex="1">
+          <mxGeometry height="24" width="20" x="844" y="156" as="geometry" />
+        </mxCell>
+        <mxCell id="q2-edge1" edge="1" parent="1" source="q2-root" target="q2-workers" style="endArrow=none;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="q2-workers" parent="1" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#FFE6CC;strokeColor=#D79B00;gradientColor=#FFFFFF;gradientDirection=south;" value="" vertex="1">
+          <mxGeometry height="36" width="36" x="800" y="215" as="geometry" />
+        </mxCell>
+        <mxCell id="q2-workers-lbl" parent="1" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=13;" value="/workers" vertex="1">
+          <mxGeometry height="24" width="80" x="844" y="221" as="geometry" />
+        </mxCell>
+        <mxCell id="q2-edge2" edge="1" parent="1" source="q2-workers" target="q2-node" style="endArrow=none;html=1;rounded=0;dashed=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="q2-node" parent="1" style="rounded=1;whiteSpace=wrap;html=1;dashed=1;dashPattern=4 4;fillColor=none;strokeColor=#000000;fontSize=13;" value="/workers/worker-1" vertex="1">
+          <mxGeometry height="36" width="180" x="720" y="280" as="geometry" />
+        </mxCell>
+        <mxCell id="q2-node-tag" parent="1" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=13;fontColor=#666666;" value="(ephemeral)" vertex="1">
+          <mxGeometry height="24" width="90" x="910" y="288" as="geometry" />
+        </mxCell>
+
+        <mxCell id="q2-usecases" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFE6CC;strokeColor=#D79B00;gradientColor=#FFFFFF;gradientDirection=south;align=left;verticalAlign=top;spacing=8;fontSize=13;" value="&lt;b&gt;&lt;font color=&quot;#D2691E&quot;&gt;Use cases:&lt;/font&gt;&lt;/b&gt;&lt;div&gt;Service registration, heartbeat information, tracking active workers.&lt;/div&gt;" vertex="1">
+          <mxGeometry height="100" width="230" x="1130" y="150" as="geometry" />
+        </mxCell>
+
+        <mxCell id="q2-example" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFE6CC;strokeColor=#D79B00;gradientColor=#FFFFFF;gradientDirection=south;align=left;verticalAlign=middle;spacing=8;fontSize=13;" value="&lt;b&gt;&lt;font color=&quot;#D2691E&quot;&gt;Example:&lt;/font&gt;&lt;/b&gt;  /workers/worker-1" vertex="1">
+          <mxGeometry height="36" width="340" x="720" y="330" as="geometry" />
+        </mxCell>
+
+        <!-- ============================================================ -->
+        <!-- QUADRANT 3: SEQUENTIAL NODE                                  -->
+        <!-- ============================================================ -->
+        <mxCell id="q3-border" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFE6CC;strokeColor=#CCCCCC;arcSize=4;gradientColor=#FFFFFF;gradientDirection=south;" value="" vertex="1">
+          <mxGeometry height="380" width="660" x="20" y="400" as="geometry" />
+        </mxCell>
+        <mxCell id="q3-badge" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#FFE6CC;strokeColor=#D79B00;fontStyle=1;fontSize=16;" value="3" vertex="1">
+          <mxGeometry height="36" width="36" x="40" y="415" as="geometry" />
+        </mxCell>
+        <mxCell id="q3-title" parent="1" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontStyle=1;fontSize=18;" value="SEQUENTIAL NODE" vertex="1">
+          <mxGeometry height="30" width="300" x="88" y="418" as="geometry" />
+        </mxCell>
+        <mxCell id="q3-desc" parent="1" style="text;html=1;align=left;verticalAlign=top;whiteSpace=wrap;strokeColor=none;fillColor=none;fontSize=13;" value="When it's created, ZooKeeper automatically appends a monotonically increasing sequence number to the node name." vertex="1">
+          <mxGeometry height="40" width="440" x="76" y="458" as="geometry" />
+        </mxCell>
+
+        <mxCell id="q3-root" parent="1" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#FFE6CC;strokeColor=#D79B00;gradientColor=#FFFFFF;gradientDirection=south;" value="" vertex="1">
+          <mxGeometry height="36" width="36" x="120" y="520" as="geometry" />
+        </mxCell>
+        <mxCell id="q3-root-lbl" parent="1" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=13;" value="/" vertex="1">
+          <mxGeometry height="24" width="20" x="164" y="526" as="geometry" />
+        </mxCell>
+        <mxCell id="q3-edge1" edge="1" parent="1" source="q3-root" target="q3-tasks" style="endArrow=none;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="q3-tasks" parent="1" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#FFE6CC;strokeColor=#D79B00;gradientColor=#FFFFFF;gradientDirection=south;" value="" vertex="1">
+          <mxGeometry height="36" width="36" x="120" y="585" as="geometry" />
+        </mxCell>
+        <mxCell id="q3-tasks-lbl" parent="1" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=13;" value="/tasks" vertex="1">
+          <mxGeometry height="24" width="60" x="164" y="591" as="geometry" />
+        </mxCell>
+
+        <mxCell id="q3-e1" edge="1" parent="1" source="q3-tasks" target="q3-t1" style="endArrow=none;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="q3-e2" edge="1" parent="1" source="q3-tasks" target="q3-t2" style="endArrow=none;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="q3-e3" edge="1" parent="1" source="q3-tasks" target="q3-t3" style="endArrow=none;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <mxCell id="q3-t1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFE6CC;strokeColor=#D79B00;gradientColor=#FFFFFF;gradientDirection=south;fontSize=12;" value="task-0000000001" vertex="1">
+          <mxGeometry height="36" width="150" x="40" y="655" as="geometry" />
+        </mxCell>
+        <mxCell id="q3-t1-lbl" parent="1" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=11;" value="/tasks/task-0000000001" vertex="1">
+          <mxGeometry height="20" width="180" x="40" y="695" as="geometry" />
+        </mxCell>
+
+        <mxCell id="q3-t2" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFE6CC;strokeColor=#D79B00;gradientColor=#FFFFFF;gradientDirection=south;fontSize=12;" value="task-0000000002" vertex="1">
+          <mxGeometry height="36" width="150" x="210" y="655" as="geometry" />
+        </mxCell>
+        <mxCell id="q3-t2-lbl" parent="1" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=11;" value="/tasks/task-0000000002" vertex="1">
+          <mxGeometry height="20" width="180" x="210" y="695" as="geometry" />
+        </mxCell>
+
+        <mxCell id="q3-t3" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFE6CC;strokeColor=#D79B00;gradientColor=#FFFFFF;gradientDirection=south;fontSize=12;" value="task-0000000003" vertex="1">
+          <mxGeometry height="36" width="150" x="380" y="655" as="geometry" />
+        </mxCell>
+        <mxCell id="q3-t3-lbl" parent="1" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=11;" value="/tasks/task-0000000003" vertex="1">
+          <mxGeometry height="20" width="180" x="380" y="695" as="geometry" />
+        </mxCell>
+
+        <mxCell id="q3-usecases" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFE6CC;strokeColor=#D79B00;gradientColor=#FFFFFF;gradientDirection=south;align=left;verticalAlign=top;spacing=8;fontSize=13;" value="&lt;b&gt;&lt;font color=&quot;#D2691E&quot;&gt;Use cases:&lt;/font&gt;&lt;/b&gt;&lt;div&gt;Distributed task queue, job logs, ID generation.&lt;/div&gt;" vertex="1">
+          <mxGeometry height="90" width="230" x="410" y="530" as="geometry" />
+        </mxCell>
+
+        <mxCell id="q3-example" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFE6CC;strokeColor=#D79B00;gradientColor=#FFFFFF;gradientDirection=south;align=left;verticalAlign=middle;spacing=8;fontSize=12;" value="&lt;b&gt;&lt;font color=&quot;#D2691E&quot;&gt;Example:&lt;/font&gt;&lt;/b&gt;  create(&quot;/tasks/task-&quot;, SEQUENTIAL)&lt;div&gt;creates: /tasks/task-0000000001, /tasks/task-0000000002, ...&lt;/div&gt;" vertex="1">
+          <mxGeometry height="54" width="480" x="40" y="720" as="geometry" />
+        </mxCell>
+
+        <!-- ============================================================ -->
+        <!-- QUADRANT 4: EPHEMERAL SEQUENTIAL NODE                        -->
+        <!-- ============================================================ -->
+        <mxCell id="q4-border" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFE6CC;strokeColor=#CCCCCC;arcSize=4;gradientColor=#FFFFFF;gradientDirection=south;" value="" vertex="1">
+          <mxGeometry height="380" width="660" x="700" y="400" as="geometry" />
+        </mxCell>
+        <mxCell id="q4-badge" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#FFE6CC;strokeColor=#D79B00;fontStyle=1;fontSize=16;" value="4" vertex="1">
+          <mxGeometry height="36" width="36" x="720" y="415" as="geometry" />
+        </mxCell>
+        <mxCell id="q4-title" parent="1" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontStyle=1;fontSize=18;" value="EPHEMERAL SEQUENTIAL NODE" vertex="1">
+          <mxGeometry height="30" width="400" x="768" y="418" as="geometry" />
+        </mxCell>
+        <mxCell id="q4-desc" parent="1" style="text;html=1;align=left;verticalAlign=top;whiteSpace=wrap;strokeColor=none;fillColor=none;fontSize=13;" value="This node combines the properties of ephemeral and sequential nodes. It is automatically deleted when the client session expires, and it receives a unique sequence number." vertex="1">
+          <mxGeometry height="60" width="440" x="756" y="458" as="geometry" />
+        </mxCell>
+
+        <mxCell id="q4-root" parent="1" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#FFE6CC;strokeColor=#D79B00;gradientColor=#FFFFFF;gradientDirection=south;" value="" vertex="1">
+          <mxGeometry height="36" width="36" x="800" y="520" as="geometry" />
+        </mxCell>
+        <mxCell id="q4-root-lbl" parent="1" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=13;" value="/" vertex="1">
+          <mxGeometry height="24" width="20" x="844" y="526" as="geometry" />
+        </mxCell>
+        <mxCell id="q4-edge1" edge="1" parent="1" source="q4-root" target="q4-election" style="endArrow=none;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="q4-election" parent="1" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#FFE6CC;strokeColor=#D79B00;gradientColor=#FFFFFF;gradientDirection=south;" value="" vertex="1">
+          <mxGeometry height="36" width="36" x="800" y="585" as="geometry" />
+        </mxCell>
+        <mxCell id="q4-election-lbl" parent="1" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=13;" value="/election" vertex="1">
+          <mxGeometry height="24" width="80" x="844" y="591" as="geometry" />
+        </mxCell>
+
+        <mxCell id="q4-e1" edge="1" parent="1" source="q4-election" target="q4-n1" style="endArrow=none;html=1;rounded=0;dashed=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="q4-e2" edge="1" parent="1" source="q4-election" target="q4-n2" style="endArrow=none;html=1;rounded=0;dashed=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="q4-e3" edge="1" parent="1" source="q4-election" target="q4-n3" style="endArrow=none;html=1;rounded=0;dashed=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <mxCell id="q4-n1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;dashed=1;dashPattern=4 4;fillColor=none;strokeColor=#000000;fontSize=12;" value="node-0000000001" vertex="1">
+          <mxGeometry height="36" width="150" x="720" y="655" as="geometry" />
+        </mxCell>
+        <mxCell id="q4-n1-lbl" parent="1" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=11;" value="/election/node-0000000001" vertex="1">
+          <mxGeometry height="20" width="200" x="720" y="695" as="geometry" />
+        </mxCell>
+
+        <mxCell id="q4-n2" parent="1" style="rounded=1;whiteSpace=wrap;html=1;dashed=1;dashPattern=4 4;fillColor=none;strokeColor=#000000;fontSize=12;" value="node-0000000002" vertex="1">
+          <mxGeometry height="36" width="150" x="890" y="655" as="geometry" />
+        </mxCell>
+        <mxCell id="q4-n2-lbl" parent="1" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=11;" value="/election/node-0000000002" vertex="1">
+          <mxGeometry height="20" width="200" x="890" y="695" as="geometry" />
+        </mxCell>
+
+        <mxCell id="q4-n3" parent="1" style="rounded=1;whiteSpace=wrap;html=1;dashed=1;dashPattern=4 4;fillColor=none;strokeColor=#000000;fontSize=12;" value="node-0000000003" vertex="1">
+          <mxGeometry height="36" width="150" x="1060" y="655" as="geometry" />
+        </mxCell>
+        <mxCell id="q4-n3-lbl" parent="1" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=11;" value="/election/node-0000000003" vertex="1">
+          <mxGeometry height="20" width="200" x="1060" y="695" as="geometry" />
+        </mxCell>
+
+        <mxCell id="q4-usecases" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFE6CC;strokeColor=#D79B00;gradientColor=#FFFFFF;gradientDirection=south;align=left;verticalAlign=top;spacing=8;fontSize=13;" value="&lt;b&gt;&lt;font color=&quot;#D2691E&quot;&gt;Use cases:&lt;/font&gt;&lt;/b&gt;&lt;div&gt;Leader election, distributed locking, membership protocols.&lt;/div&gt;" vertex="1">
+          <mxGeometry height="90" width="230" x="1090" y="530" as="geometry" />
+        </mxCell>
+
+        <mxCell id="q4-example" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFE6CC;strokeColor=#D79B00;gradientColor=#FFFFFF;gradientDirection=south;align=left;verticalAlign=middle;spacing=8;fontSize=12;" value="&lt;b&gt;&lt;font color=&quot;#D2691E&quot;&gt;Example:&lt;/font&gt;&lt;/b&gt;  create(&quot;/election/node-&quot;, EPHEMERAL | SEQUENTIAL)&lt;div&gt;creates: /election/node-0000000001, /election/node-0000000002, ...&lt;/div&gt;" vertex="1">
+          <mxGeometry height="54" width="520" x="720" y="720" as="geometry" />
+        </mxCell>
+
+      </root>
+    </mxGraphModel>
+  </diagram>
 </mxfile>
